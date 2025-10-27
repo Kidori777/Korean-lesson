@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최고의 궁중떡볶이 레시피</title>
+    <style>
+        /* 기본 스타일 */
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+            background-color: #f7f3e8; /* 떡볶이의 따뜻하고 고급스러운 느낌을 살린 은은한 베이지색 배경 */
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 메인 타이틀 */
+        .recipe-title {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .recipe-title h1 {
+            font-family: 'Nanum Gothic', sans-serif; /* 너무 굵지 않으면서도 세련된 글꼴 */
+            font-size: 2.5em; /* PC/태블릿 기본 크기 */
+            color: #a0522d; /* 궁중 요리의 품격을 담은 세련된 갈색 */
+            letter-spacing: 2px;
+            border-bottom: 3px solid #d4b483; /* 은은한 금빛 느낌의 밑줄 */
+            display: inline-block;
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+        }
+
+        /* 사진 스타일 */
+        .recipe-image {
+            text-align: center;
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-image img {
+            max-width: 100%; 
+            height: auto; 
+            max-height: 500px; 
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        /* 섹션 구분 */
+        .section {
+            background-color: #fff;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .section h2 {
+            font-size: 1.8em;
+            color: #8b4513; /* 차분하고 깊은 브라운 */
+            border-left: 5px solid #d4b483; /* 강한 강약 조절 */
+            padding-left: 10px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        /* 재료 목록 스타일 */
+        .ingredients ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .ingredients li {
+            width: 50%; /* PC/태블릿에서 2열 */
+            padding: 5px 0;
+            margin-bottom: 5px;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .ingredients li strong {
+            color: #d84315; /* 강조색: 식재료의 신선함과 맛을 표현 */
+            font-weight: bold;
+        }
+
+        /* 조리 방법 스타일 */
+        .steps ol {
+            padding-left: 20px;
+        }
+
+        .steps li {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+            padding: 10px;
+            background-color: #fafafa;
+            border-radius: 5px;
+            border-left: 3px solid #8b4513;
+        }
+
+        .steps li strong {
+            color: #8b4513; /* 단계 강조 */
+            font-size: 1.1em;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* 팁 스타일 */
+        .tip {
+            background-color: #fcefdc; /* 은은한 주황 계열로 팁 강조 */
+            border-left: 5px solid #d84315;
+            padding: 15px;
+            border-radius: 5px;
+            font-style: italic;
+        }
+
+        /* 모바일 최적화 (768px 이하) */
+        @media (max-width: 768px) {
+            .recipe-title h1 {
+                font-size: 2em;
+            }
+            
+            .section h2 {
+                font-size: 1.6em;
+            }
+
+            .ingredients li {
+                width: 100%; /* 모바일에서 1열 */
+            }
+
+            .steps ol {
+                padding-left: 0;
+            }
+            
+            .steps li {
+                padding: 10px;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header class="recipe-title">
+            <h1>궁중떡볶이</h1>
+            <p><strong>달콤하고 짭조름한 전통 궁중 요리의 맛!</strong></p>
+        </header>
+
+        <div class="recipe-image">
+            <img src="https://kidori777.github.io/Korean-lesson/gungjung.png" alt="정갈하게 플레이팅된 궁중떡볶이 사진" style="max-width: 100%; height: auto; max-height: 500px;">
+        </div>
+
+        <div class="section introduction">
+            <h2>레시피 소개</h2>
+            <p>궁중떡볶이는 고추장 대신 간장으로 맛을 낸 고급스러운 떡볶이입니다. 소고기의 감칠맛과 다양한 채소의 아삭함, 쫄깃한 떡이 어우러져 남녀노소 모두가 좋아하는 일품 요리입니다. 최고의 맛을 내는 비법 양념장으로 간편하게 만들어 보세요!</p>
+        </div>
+
+        <div class="section ingredients">
+            <h2>재료 준비</h2>
+
+            <h3>주요 재료</h3>
+            <ul>
+                <li><strong>떡볶이 떡</strong> (쌀떡 또는 가래떡): 400g</li>
+                <li><strong>소고기</strong> (불고기용 또는 채끝): 150g</li>
+                <li><strong>표고버섯</strong>: 3개</li>
+                <li><strong>당근</strong>: 1/3개</li>
+                <li><strong>양파</strong>: 1/2개</li>
+                <li><strong>파프리카</strong> (빨강/노랑): 각 1/3개</li>
+                <li><strong>대파</strong>: 1/2대</li>
+            </ul>
+
+            <h3>소고기 밑간 양념</h3>
+            <ul>
+                <li><strong>진간장</strong>: 1큰술</li>
+                <li><strong>설탕</strong>: 1/2큰술</li>
+                <li><strong>다진 마늘</strong>: 1/2작은술</li>
+                <li><strong>참기름</strong>: 1작은술</li>
+                <li><strong>후추</strong>: 약간</li>
+            </ul>
+
+            <h3>궁중떡볶이 양념장 (메인)</h3>
+            <ul>
+                <li><strong>진간장</strong>: 3큰술</li>
+                <li><strong>굴소스</strong>: 1큰술 (감칠맛 비법!)</li>
+                <li><strong>물엿/올리고당</strong>: 2큰술</li>
+                <li><strong>다진 마늘</strong>: 1큰술</li>
+                <li><strong>참기름</strong>: 1큰술</li>
+                <li><strong>깨소금/통깨</strong>: 1큰술</li>
+                <li><strong>물/육수</strong>: 50~100ml (조절용)</li>
+            </ul>
+        </div>
+
+        <div class="section steps">
+            <h2>조리 방법</h2>
+            <ol>
+                <li>
+                    <strong>떡 준비 및 밑간</strong>
+                    떡볶이 떡은 굳어 있다면 끓는 물에 살짝 데쳐 말랑하게 만든 후, 찬물에 헹궈 물기를 빼줍니다. 떡에 **참기름 1작은술**을 넣어 버무려 놓으면 볶을 때 달라붙지 않고 고소합니다.
+                </li>
+                <li>
+                    <strong>채소 및 고기 준비</strong>
+                    소고기는 키친타월로 핏물을 제거하고, 밑간 양념에 버무려 10분 정도 재워둡니다. 채소(당근, 양파, 파프리카, 버섯)는 떡과 비슷한 길이로 채 썰고, 대파는 어슷 썰어 준비합니다.
+                </li>
+                <li>
+                    <strong>양념장 만들기</strong>
+                    메인 양념장 재료(진간장, 굴소스, 물엿, 다진 마늘, 참기름, 깨소금)를 한데 섞어 준비합니다.
+                </li>
+                <li>
+                    <strong>고기 볶기</strong>
+                    달군 팬에 식용유를 살짝 두르고, 재워둔 소고기를 먼저 볶아줍니다. 고기가 80% 정도 익으면 접시에 잠시 덜어둡니다.
+                </li>
+                <li>
+                    <strong>채소 및 떡 볶기</strong>
+                    같은 팬에 당근, 양파, 표고버섯 순으로 넣고 볶다가, 손질한 떡을 넣고 함께 볶습니다.
+                </li>
+                <li>
+                    <strong>양념 및 마무리</strong>
+                    여기에 **준비된 양념장**을 넣고 볶아 양념이 잘 배도록 합니다. 양념이 너무 졸면 물(또는 육수)을 조금씩 넣어가며 농도를 조절합니다.
+                </li>
+                <li>
+                    <strong>합치고 마무리</strong>
+                    양념이 떡에 잘 배면, 볶아 둔 소고기, 파프리카, 대파를 넣고 센 불에 빠르게 한 번 더 볶아줍니다. 마지막으로 간을 보고 부족하면 간장이나 소금으로 추가하고, 불을 끈 후 참기름 약간을 둘러 마무리합니다.
+                </li>
+            </ol>
+        </div>
+
+        <div class="section tip-section">
+            <h2>맛있는 꿀팁!</h2>
+            <p class="tip">
+                <strong>[⭐감칠맛 비법]</strong> 물 대신 <strong>소고기 육수나 다시마 육수</strong>를 사용하거나, 양념에 **배즙이나 사과즙 1~2큰술**을 추가하면 은은한 단맛과 감칠맛이 더욱 살아납니다. 떡을 데칠 때 **소금 약간**을 넣으면 떡 자체에 은은하게 간이 배어 더욱 맛있습니다.
+            </p>
+        </div>
+
+        <footer style="text-align: center; padding: 20px; color: #888; font-size: 0.9em;">
+            <p>&copy; 요리 레시피 HTML. 행복한 요리 시간 되세요!</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
